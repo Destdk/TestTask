@@ -8,8 +8,8 @@ namespace TestTask.Services
 {
     public class UserService : IUserService
     {
-        private readonly ApplicationDbContext _dbContext;
-        public UserService(ApplicationDbContext dbContext)
+        private readonly IDatabaseContext _dbContext;
+        public UserService(IDatabaseContext dbContext)
         {
             _dbContext = dbContext;
         }

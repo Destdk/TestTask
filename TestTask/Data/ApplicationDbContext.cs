@@ -5,7 +5,7 @@ using TestTask.Services.Interfaces;
 
 namespace TestTask.Data
 {
-    public class ApplicationDbContext : DbContext
+    public class ApplicationDbContext : DbContext, IDatabaseContext
     {
         public DbSet<User> Users { get; set; }
 

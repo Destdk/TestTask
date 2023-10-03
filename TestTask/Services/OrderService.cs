@@ -7,8 +7,8 @@ namespace TestTask.Services
 {
     public class OrderService : IOrderService
     {
-        private readonly ApplicationDbContext _dbContext;
-        public OrderService(ApplicationDbContext dbContext)
+        private readonly IDatabaseContext _dbContext;
+        public OrderService(IDatabaseContext dbContext)
         {
             _dbContext = dbContext;
         }
