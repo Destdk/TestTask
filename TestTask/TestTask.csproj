@@ -7,9 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Remove="Services\DatabaseContext.cs" />
     <Compile Remove="Services\Interfaces\IDatabaseContext.cs" />
-    <Compile Remove="Services\UserService.cs" />
   </ItemGroup>
 
   <ItemGroup>
